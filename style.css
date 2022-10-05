@@ -1,0 +1,256 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+body,
+p,
+ul {
+  margin: 0;
+
+}
+
+/* Navbar */
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: #7a7a7b
+}
+
+.nav-item:hover {
+  color: #000000;
+  font-weight: bolder;
+}
+
+
+.logo>img {
+  filter: invert(106%) sepia(100%) saturate(7444%) hue-rotate(148deg) brightness(106%) contrast(112%);
+}
+
+#register-btn {
+  border: 2px solid #81c2f7;
+  border-radius: 5px;
+  padding: 1%;
+  color: #81c2f7;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* End of Navbar */
+
+.hero_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 4%;
+}
+
+.img_container>img {
+  width: 100%;
+}
+
+.text_container {
+  width: 40%;
+}
+
+p {
+  color: #888989;
+}
+
+.text_container>h1 {
+  font-size: 2.5em;
+  font-weight: 1000;
+}
+
+.cta_btn {
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(to right bottom, #11c0f8, #0566ea);
+  border-radius: 5px;
+  border: transparent;
+  padding: 1% 3%;
+  margin-top: 2%;
+}
+
+.services_listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.services_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.services_text>p {
+  width: 50%;
+}
+
+.servicess_item {
+  flex-basis: 30%;
+}
+
+.pricing_section {
+  background: linear-gradient(to right bottom, #11c0f8, #0566ea);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+}
+
+.pricing_card_list {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.pricing_card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1% 2%;
+  width: auto;
+}
+
+.pricing_card>div {
+  width: 20em;
+}
+
+ul {
+  margin-block: 0;
+  padding-inline: 0;
+}
+li{
+  list-style-type: none;
+}
+.pricing_list li {
+  list-style-image: url(./images/check.svg);
+  margin: 0;
+  list-style-position: inside;
+  padding: 3%;
+  filter: invert(75%) sepia(39%) saturate(534%) hue-rotate(112deg) brightness(97%) contrast(94%);
+}
+
+.price_container {
+  text-align: center;
+}
+
+.pricing_section>h3 {
+  color: #ffffff;
+}
+
+.price_container>h3>p {
+  display: inline;
+}
+
+li>p{
+ color: #ffdede;
+ display: inline;
+}
+
+button{
+  background-color: #ffffff;
+    color: #0566ea;
+    border-color: #0566ea;
+    padding: 1.2% 4%;
+    border-radius: 5px;
+}
+.customer_section{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3%;
+}
+.customer_heading{
+  width: 50%;
+  text-align: center;
+}
+.customer_card_list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.customer_card{
+  flex-basis:30%;
+  border:1px solid #F1F2F2;
+  border-radius: 5px;
+  padding: 1%;
+}
+.customer_details{
+  display: flex;
+  padding-top: 3%;
+  align-items: center;
+}
+.customer_credential>h5{
+  margin: 0;
+  margin-bottom: 4%;
+}
+.customer_img{
+  background-color: #d9d9d9;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 5%;
+}
+
+.registeration_section{
+  padding: 3%;
+  background: linear-gradient(to right bottom, #11c0f8, #0566ea);
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  align-items: center;
+}
+.register_text{
+  color: #ffffff;
+}
+.register_now_white{
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  padding: 5%;
+  border-radius: 5px;
+  width: 8rem;
+}
+footer{
+  padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_text{
+  width: 30%;
+  align-self: center;
+}
+.footer_text>img{
+  filter:invert(88%) sepia(0%) saturate(7465%) hue-rotate(338deg) brightness(106%) contrast(109%);
+  margin-bottom: 2%;
+}
+footer>div>ul>li:not(.footer_heading){
+  color: #888989;
+}
