@@ -124,7 +124,6 @@ p {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .pricing_card {
@@ -270,6 +269,12 @@ footer>div>ul>li:not(.footer_heading){
   text-align: center;
   gap: 2rem;
 }
+
+ }
+ @media only screen and (max-width: 1166px) {
+  .pricing_card_list{
+    flex-wrap: wrap;
+   }
  }
  @media only screen and (max-width: 552px) {
   nav{
@@ -292,4 +297,5 @@ footer>div>ul>li:not(.footer_heading){
   flex-flow: column;
   text-align: center;
  }
+
 }
