@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -124,6 +124,7 @@ p {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .pricing_card {
@@ -242,6 +243,7 @@ footer{
   padding: 3%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .footer_text{
   width: 30%;
@@ -253,4 +255,41 @@ footer{
 }
 footer>div>ul>li:not(.footer_heading){
   color: #888989;
+}
+
+@media only screen and (max-width: 895px) {
+  header{
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+.registeration_section{
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 2rem;
+}
+ }
+ @media only screen and (max-width: 552px) {
+  nav{
+    flex-wrap: wrap;
+  }
+  nav::after{
+    content: '';
+    width: 100%;
+    border: 1px solid #11c0f8;
+  }
+ .hero_section:not(.reverse){
+  flex-flow: column-reverse;
+    align-items: center;
+ }
+ .hero_section.reverse{
+  flex-flow: column;
+    align-items: center;
+ }
+ .services_text{
+  flex-flow: column;
+  text-align: center;
+ }
 }
